@@ -108,7 +108,6 @@ move = (evt) => {
 };
 
   onChange = (evt) => {
-    // You will need this to update the value of the input.
     const newValue = evt.target.value;
     this.setState({
       [evt.target.id]: newValue,

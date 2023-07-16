@@ -83,15 +83,13 @@ const AppFunctional = ({ className }) => {
     }
   };
 
-  // Function to handle form submission
-  // Function to handle form submission
 // Function to handle form submission
 const onSubmit = (evt) => {
   evt.preventDefault();
   setMessage('');
   const { x, y } = getXY();
   const payload = {
-    x: x + 1, // Add 1 to x and y to match the server's 1-based index requirement
+    x: x + 1, 
     y: y + 1,
     steps,
     email,
